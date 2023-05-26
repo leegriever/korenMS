@@ -2,7 +2,7 @@
 
 #include <linux/slab.h> // kmalloc, kfree
 #include <linux/uaccess.h>  /* for get_user and put_user */
-#include "message_slot.h"
+#include "message_slot_koren.h"
 MODULE_LICENSE("GPL");
 
 typedef enum status {
