@@ -47,7 +47,7 @@ int main(int argc, char* argv[]){
     checker(fd, -1, OPEN);
     channel_id = (unsigned long) atoi(argv[2]);
     // check ioctl sucsses
-    checker(ioctl(fd, MSG_SLOT_CHANNEL, channel_id), SUCCESS, ID);
+    checker(ioctl(fd, MSG_SLOT_CHANNEL, channel_id), 0, ID);
     // check printing sucsses
     if (write(fd, argv[3], strlen(argv[3]) != strlen(argv[3])) == -1){
         perror("Error - failed closing file");
