@@ -49,7 +49,7 @@ int main(int argc, char* argv[]){
     // check ioctl sucsses
     checker(ioctl(fd, MSG_SLOT_CHANNEL, channel_id), 0, ID);
     // check printing sucsses
-    if (write(fd, argv[3], strlen(argv[3]) != strlen(argv[3])) == -1){
+    if (write(fd, argv[3], strlen(argv[3]) != strlen(argv[3])){
         perror("Error - failed closing file");
         exit(1);
     }
