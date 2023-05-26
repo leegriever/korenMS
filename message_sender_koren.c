@@ -5,7 +5,7 @@
 #include <fcntl.h>
 #include <sys/ioctl.h>
 
-#include "message_slot.h"
+#include "message_slot_koren.h"
 
 #define SUCCESS (0)
 #define SET_STATUS(cond, message){							\
